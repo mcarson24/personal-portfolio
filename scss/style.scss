@@ -1,3 +1,7 @@
+body {
+	color: #FFF;
+}
+
 header {
 	background: #000 url('../imgs/pexels-photo.jpg') no-repeat fixed center;
 	background-size: 100% 100%; 
@@ -46,7 +50,7 @@ header {
 }
 
 section {
-	height: 500px;
+	height: 750px;
 	.page-header {
 		margin: 0;
 		border: none; 

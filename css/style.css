@@ -1,3 +1,6 @@
+body {
+  color: #FFF; }
+
 header {
   background: #000 url("../imgs/pexels-photo.jpg") no-repeat fixed center;
   background-size: 100% 100%;
@@ -34,7 +37,7 @@ header {
       text-transform: uppercase; }
 
 section {
-  height: 500px; }
+  height: 750px; }
   section .page-header {
     margin: 0;
     border: none; }
