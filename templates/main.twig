@@ -2,11 +2,13 @@
 <html>
 	<head>
 		{% block head %}
-		<title>Matthew Carson | Web Developer</title>
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
-		<link rel="stylesheet" href="css/animate.css">
-		<link rel="stylesheet" href="css/styles.css">
+			<title>Matthew Carson | Web Developer</title>
+			<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+			<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/animate.css">
+			<link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:100,400,700" rel="stylesheet">
+			<link rel="stylesheet" href="css/styles.css">
 		{% endblock head %}
 	</head>
 	<body>
@@ -33,5 +35,8 @@
 		{% include '_about.twig' %}
 		{% include '_skills.twig' %}
 		{% include '_scripts.twig' %}
+		<footer>
+			{% include '_footer.twig' %}
+		</footer>
 	</body>
 </html>
