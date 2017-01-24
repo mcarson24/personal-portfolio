@@ -7,7 +7,7 @@ var gulp = require('gulp'),
 	  del = require('gulp-clean-old');
 
 gulp.task('sass', () => {
-	return gulp.src('scss/style.scss')
+	return gulp.src('scss/styles.scss')
 				     .pipe(maps.init())
 				     .pipe(sass())
 				     .pipe(maps.write('./'))

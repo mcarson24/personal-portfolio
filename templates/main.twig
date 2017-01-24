@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		{% block head %}
+		<title>Matthew Carson | Web Developer</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/styles.css">
+		{% endblock head %}
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-fixed-top my-nav">
+				<div class="container-fluid">
+		      <ul class="nav navbar-nav navbar-right">
+		        <li class="about"><a href="#about">About Me</a></li>
+		        <li class="skills"><a href="#skills">Skills</a></li>
+		        <li><a href="#more">Link</a></li>
+		      </ul>
+				</nav>
+				<div class="info text-center">
+					{% block hero %}
+						<h1 class="title">Matthew Carson</h1>
+						<h3 class="subtitle">Web Developer</h3>
+					{% endblock hero %}
+				</div>
+			</div>
+		</header>
+		<main>
+		</main>
+		{% include '_about.twig' %}
+		{% include '_skills.twig' %}
+		{% include '_scripts.twig' %}
+	</body>
+</html>
