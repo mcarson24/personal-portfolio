@@ -22,11 +22,6 @@ header {
     background-color: inherit;
     color: #E5E5E5 !important; }
 
-.navbar-right {
-  padding-right: 50px; }
-  .navbar-right li {
-    padding: 0 25px; }
-
 .info {
   padding-top: 200px;
   color: #FFF;
@@ -41,6 +36,12 @@ section {
   section .page-header {
     margin: 0;
     border: none; }
+  section .section-body {
+    text-align: center;
+    padding-top: 25px;
+    line-height: 25px;
+    width: 50%;
+    margin: 0 auto; }
 
 #about {
   background-color: #0F1626; }
@@ -58,16 +59,21 @@ section {
   display: block;
   margin: 0 auto; }
 
-@media (max-height: 767px) {
+@media (max-width: 767px) {
   .my-nav .navbar-right {
     padding-right: 0; }
   .my-nav li {
     text-align: center;
-    padding: 0;
-    border-bottom: 1px solid black; }
+    padding: 0; }
     .my-nav li:last-child {
       border-bottom: none; }
     .my-nav li a {
       width: 100%; } }
+
+@media (min-width: 768px) {
+  .navbar-right {
+    padding-right: 50px; }
+    .navbar-right li {
+      padding: 0 20px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -19,7 +19,6 @@ header {
 	font-size: 1.25em;
 	a {
 		color: #FFF !important;
-
 	}
 	li {
 		&:hover,
@@ -27,13 +26,6 @@ header {
 			background-color: inherit;
 			color: #E5E5E5 !important;
 		}
-	}
-}
-
-.navbar-right {
-	padding-right: 50px;
-	li {
-		padding: 0 25px;
 	}
 }
 
@@ -54,6 +46,13 @@ section {
 	.page-header {
 		margin: 0;
 		border: none; 
+	}
+	.section-body {
+		text-align: center;
+		padding-top: 25px;
+		line-height: 25px;
+		width: 50%;
+		margin: 0 auto;
 	}
 }
 
@@ -77,7 +76,7 @@ section {
 	margin: 0 auto;
 }
 
-@media (max-height: 767px) {
+@media (max-width: 767px) {
 	.my-nav {
 		.navbar-right {
 			padding-right: 0;
@@ -85,13 +84,21 @@ section {
 		li {
 			text-align: center;
 			padding: 0;
-			border-bottom: 1px solid black;
 			&:last-child {
 				border-bottom: none;
 			}
 			a {
 				width: 100%;
 			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.navbar-right {
+		padding-right: 50px;
+		li {
+			padding: 0 20px;
 		}
 	}
 }
