@@ -64,6 +64,23 @@ section {
 	background-color: #FF533D;
 }
 
+.skill {
+	display: block;
+	margin: 25px auto;
+	border-bottom: 1px solid transparent;
+	i {
+		margin: 5px 5px;
+		font-size: 5em;
+		&.colored {
+			color: #FFF;
+		}
+		&:hover {
+			color: pink;
+		}
+	}
+}
+
+
 .page-header {
 	padding-top: 50px;
 }
@@ -101,4 +118,9 @@ section {
 			padding: 0 20px;
 		}
 	}
+}
+
+@keyframes flash {
+	from: { background-color: #FFF }
+	to: { background-color: yellow }
 }

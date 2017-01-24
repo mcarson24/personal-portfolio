@@ -49,6 +49,18 @@ section {
 #skills {
   background-color: #FF533D; }
 
+.skill {
+  display: block;
+  margin: 25px auto;
+  border-bottom: 1px solid transparent; }
+  .skill i {
+    margin: 5px 5px;
+    font-size: 5em; }
+    .skill i.colored {
+      color: #FFF; }
+    .skill i:hover {
+      color: pink; }
+
 .page-header {
   padding-top: 50px; }
 
@@ -75,5 +87,9 @@ section {
     padding-right: 50px; }
     .navbar-right li {
       padding: 0 20px; } }
+
+@keyframes flash {
+  from-background-color: #FFF;
+  to-background-color: yellow; }
 
 /*# sourceMappingURL=style.css.map */
