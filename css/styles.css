@@ -66,18 +66,16 @@ section .about-body {
   padding: 12.5px 0; }
 
 #about {
-  background-color: #0F1626;
-  height: 750px; }
+  background-color: #0F1626; }
   #about .page-header h2 {
     margin-bottom: 25px; }
 
-#skills {
-  height: 550px; }
-  #skills .skills-content {
-    background-color: rgba(0, 0, 0, 0.35);
-    border-radius: 15px; }
-  #skills .page-header h2 {
-    text-shadow: 4px 4px 4px #000; }
+#skills .skills-content {
+  background-color: rgba(0, 0, 0, 0.35);
+  border-radius: 15px; }
+
+#skills .page-header h2 {
+  text-shadow: 4px 4px 4px #000; }
 
 .skill {
   display: block;
@@ -129,7 +127,9 @@ footer {
     .my-nav li:last-child {
       border-bottom: none; }
     .my-nav li a {
-      width: 100%; } }
+      width: 100%; }
+  .section-body {
+    margin: 0 auto; } }
 
 @media (min-width: 768px) {
   .navbar-right {

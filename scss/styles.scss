@@ -87,7 +87,6 @@ section {
 
 #about {
 	background-color: $mainBodyColor;
-	height: 750px;
 	.page-header {
 		h2 {
 			margin-bottom: 25px;
@@ -96,7 +95,6 @@ section {
 }
 
 #skills {
-	height: 550px;
 	.skills-content {
 		background-color: rgba(0, 0, 0, .35);
 		border-radius: 15px;
@@ -178,6 +176,9 @@ footer {
 				width: 100%;
 			}
 		}
+	}
+	.section-body {
+		margin: 0 auto;
 	}
 }
 
