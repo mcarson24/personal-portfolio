@@ -4,7 +4,8 @@ var gulp = require('gulp'),
 	  concat = require('gulp-concat-css')
 	  clean = require('gulp-clean-css')
 	  rename = require('gulp-rename')
-	  del = require('gulp-clean-old');
+	  del = require('gulp-clean-old')
+	  rev = require('gulp-rev');
 
 gulp.task('sass', () => {
 	return gulp.src('scss/styles.scss')

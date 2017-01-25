@@ -15,14 +15,51 @@
 	</head>
 	<body>
 		<header>
-			<nav class="dropdown navbar navbar-fixed-top my-nav">
+			<!-- <nav class="navbar navbar-default">
+			  <div class="container-fluid">
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			    </div>
+
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav">
+			        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+			        <li><a href="#">Link</a></li>
+			      </ul>
+			      <ul class="nav navbar-nav navbar-right">
+			        <li><a href="#">Link</a></li>
+			      </ul>
+			    </div>
+			  </div>
+			</nav>
+
+    </nav> -->
+			<nav class="navbar navbar-default my-nav">
 				<div class="container-fluid">
-		      <ul class="nav navbar-nav navbar-right">
-		        <li class="about"><a href="#about">About Me</a></li>
-		        <li class="skills"><a href="#skills">Skills</a></li>
-		        <li class="footer"><a href="#footer">Resume</a></li>
-		      </ul>
-		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<div class="navbar-header">
+    				<button type="button" 
+    								class="navbar-toggle collapsed menu-button"
+    								data-toggle="collapse" 
+    								data-target="#bs-example-navbar-collapse-1" 
+    								aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			  	</div>
+			  	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav navbar-right">
+			        <li class="about"><a href="#about">About Me</a></li>
+			        <li class="skills"><a href="#skills">Skills</a></li>
+			        <li class="footer"><a href="#footer">Resume</a></li>
+			      </ul>
+		      </div>
 				</nav>
 				<div class="containter">
 					<div class="info text-center">
@@ -34,10 +71,10 @@
 				</div>
 			</header>
 			<main>
+				{% include '_about.twig' %}
+				{% include '_skills.twig' %}
+				{% include '_scripts.twig' %}
 			</main>
-			{% include '_about.twig' %}
-			{% include '_skills.twig' %}
-			{% include '_scripts.twig' %}
 		</div>
 		<footer id="footer">
 			{% include '_footer.twig' %}

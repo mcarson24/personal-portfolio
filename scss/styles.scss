@@ -2,7 +2,7 @@ $mainBodyColor: #0F1626;
 
 body {
 	color: #FFF;
-	font-family: 'Fira Sans Condenses', sans-serif;
+	font-family: 'Fira Sans Condensed', sans-serif;
 }
 
 h1,
@@ -16,6 +16,7 @@ h2 {
 		font-size: 25px;
 		text-transform: none !important;
 		text-shadow: none;
+		font-weight: 100;
 	}
 }
 
@@ -30,6 +31,30 @@ header {
 	width: 100%;
 }
 
+.navbar-default {
+	.navbar-toggle {
+		&:hover {
+			background-color: rgba(0, 0, 0, .5);
+		}
+		.icon-bar {
+			background-color: orange;
+		}
+	}
+	.navbar-collapse {
+		border: none;
+	}
+}
+
+.menu-button {
+	background: rgba(0, 0, 0, .35);
+	border: none !important;
+	margin: 12px 30px 0 0;
+	&:focus {
+		background-color: rgba(0, 0, 0, .35) !important;
+	}
+}
+
+
 .my-nav {
 	position: fixed;
 	height: 65px;
@@ -38,8 +63,17 @@ header {
 	width: 100%;
 	background-color: rgba(0,0,0,.35);
 	border: none;
+	border-radius: 0;
 	font-size: 1.25em;
 	z-index: 0;
+	.container-fluid {
+		padding: 0;
+		.in, 
+		.collapsing {
+			margin-top: 21px;
+			background-color: rgba(0, 0, 0, .35);
+		}
+	}
 	a {
 		color: #FFF !important;
 	}
@@ -65,6 +99,7 @@ header {
 }
 
 section {
+	padding-bottom: 25px;
 	.page-header {
 		margin: 0;
 		border: none; 
@@ -82,6 +117,9 @@ section {
 		text-align: justify;
 		line-height: 150%;
 		padding: 12.5px 0;
+	}
+	h2 {
+		margin-top: 0;
 	}
 }
 
@@ -117,7 +155,7 @@ section {
 			color: #FFF;
 		}
 		&:hover {
-			color: #F2F2F2;
+			color: #C3C3C3;
 		}
 	}
 }
@@ -183,6 +221,15 @@ footer {
 }
 
 @media (min-width: 768px) {
+	.my-nav {
+		.container-fluid {
+			.in, 
+			.collapsing {
+				margin-top: 0px;
+				background-color: transparent !important;
+			}
+		}
+	}
 	.navbar-right {
 		padding: 5px 50px 0 0;
 		li {

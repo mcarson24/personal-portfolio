@@ -1,4 +1,5 @@
 <script src="js/jquery-3.1.1.js"></script>
+<script src="js/bootstrap.js"></script>
 <script src="js/jquery.sticky.js"></script>
 <script>
 	// $('i').mouseover(e => {
@@ -13,21 +14,32 @@
 	// })
 	$(document).ready(function(){
     $(".title").sticky({topSpacing:-2, 'zIndex': 100, responsiveWidth: true});
+    // $('.menu-button').css('background-color', 'rgba(0, 0, 0, .35)');
   });
 
   $(document).ready(function(){       
-   var scroll_start = 0;
-   var startchange = $('.title');
-   var offset = startchange.offset();
-    if (startchange.length){
-   $(document).scroll(function() { 
-      scroll_start = $(this).scrollTop();
-      if(scroll_start > offset.top) {
-          $(".my-nav").css('background-color', '#0F1626');
-       } else {
-          $('.my-nav').css('background-color', 'rgba(0, 0, 0, .25)');
-       }
-   });
+  	var scroll_start = 0;
+  	var startchange = $('.title');
+  	var offset = startchange.offset();
+  	if (startchange.length){
+   		$(document).scroll(function() { 
+      	scroll_start = $(this).scrollTop();
+      	if (scroll_start > offset.top) {
+          $(".my-nav").css({
+          	'background-color': '#0F1626',
+          	'box-shadow': '0 1px 5px 0px #000'
+          });
+          $(".in").css({
+          	'background-color': '#0F1626',
+          });
+      	} 
+	    	else {
+	      	$('.my-nav, .in').css({
+	      		'background-color': 'rgba(0, 0, 0, .35)',
+	      		'box-shadow': 'none'
+	      	});
+	    	}
+   		});
     }
 });
 </script>
